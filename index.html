@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nawabi Treasure Hunt</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="main" class="treasure-bg">
+    <!-- Registration Section -->
+    <div id="registerBox" class="card">
+      <h1>🏰 Nawabi Treasure Hunt 🐪</h1>
+      <p><strong>Instructions:</strong></p>
+      <ul style="text-align:left">
+        <li>This is a location-based clue-solving treasure hunt.</li>
+        <li>Each clue will lead you to a physical location.</li>
+        <li>You must find the volunteer at each location to get your scroll signed.</li>
+        <li>Do not skip clues. Progress is saved automatically.</li>
+      </ul>
+      <input type="text" id="teamName" placeholder="Team Name" />
+      <input type="text" id="leaderId" placeholder="Leader Registration Number (e.g., 23ABC1234)" />
+      <div>
+        <input type="checkbox" id="instructionCheck" /><br> I have read and understood the instructions.
+      </div>
+      <button onclick="registerTeam()">Start Hunt</button>
+    </div>
+
+    <!-- Game Section -->
+    <div id="gameBox" class="card hidden">
+      <div id="teamInfo" style="text-align:left; font-size:1rem; margin-bottom:1rem;"></div>
+      <h2>📜 Current Clue</h2>
+      <pre id="clueText" class="clue-font clue-box"></pre>
+      <div id="answerSection">
+        <input type="text" id="answerInput" placeholder="Enter your answer..." />
+        <button onclick="submitAnswer()">Submit Answer</button>
+      </div>
+      <div id="feedback"></div>
+      <div id="dareHint" class="dare-box hidden"></div>
+      <div id="congratsBox" class="hidden"></div>
+    </div>
+
+    <!-- Completion Section -->
+    <div id="completeBox" class="card hidden">
+      <h2>🎉 Congratulations!</h2>
+      <p>You’ve completed the Nawabi Treasure Hunt!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

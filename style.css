@@ -1,0 +1,92 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: url('https://i.imgur.com/89dfjUQ.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #e6d3a3;
+}
+
+.card {
+  background: rgba(36, 24, 5, 0.9);
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+  text-align: center;
+  border: 2px solid #c9a73f;
+}
+
+input {
+  width: 90%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 2px solid #c9a73f;
+  border-radius: 0.5rem;
+  background: #2e1f09;
+  color: #ffecc7;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #c9a73f;
+  color: #1d1206;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  background-color: #ffe58f;
+}
+
+h1, h2 {
+  font-size: 2.2rem;
+  color: #ffdc73;
+  font-family: 'UnifrakturCook', cursive;
+}
+
+.clue-font {
+  font-size: 1.2rem;
+  white-space: pre-wrap;
+  font-weight: bold;
+  background: rgba(255, 248, 200, 0.1);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #ffeecb;
+  border: 2px dashed #c9a73f;
+}
+
+.dare-box {
+  background-color: rgba(250, 205, 100, 0.2);
+  border-left: 4px solid #ffeb94;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  color: #fff8db;
+}
+
+#congratsBox {
+  background: rgba(189, 255, 189, 0.1);
+  border: 2px dashed #94ff94;
+  padding: 1rem;
+  margin-top: 1.2rem;
+  border-radius: 1rem;
+  display: none;
+}
+
+#congratsBox p {
+  font-size: 1.2rem;
+  color: #c3ffb7;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
